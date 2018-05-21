@@ -96,7 +96,7 @@ sudo apt-get install fonts-lmodern
       }
   ],
 ```
-包含了設定在新分頁檢視pdf檔，選擇```XeLaTex```作為編譯器，及設定編譯流程  
+包含了設定在新分頁檢視pdf檔，選擇```XeLaTeX```作為編譯器，及設定編譯流程  
 
 這樣裝完之後  
 每次修改tex檔並儲存時，就會自動編譯並刷新已開啟的pdf檔  
