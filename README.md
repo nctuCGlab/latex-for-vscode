@@ -24,7 +24,7 @@ sudo apt-get install texlive texlive-xetex texlive-latex-recommended texlive-lat
 *不過我沒實際在Windows上裝過，僅供參考*
 
 ## 安裝字型
-取自[臺灣大學碩博士論文 XeLaTeX 模版](https://github.com/shaform/ntu-thesis/wiki)
+取自[臺灣大學碩博士論文 XeLaTeX 模版](https://github.com/shaform/ntu-thesis/wiki)  
 重點就是要有這5個字型檔
 * kaiu.ttf
 * timesbd.ttf
