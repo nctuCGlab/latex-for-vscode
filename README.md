@@ -3,8 +3,8 @@
 注意VSCode與LaTeX Workshop版本
 
 ## 參考
-[臺灣大學碩博士論文 XeLaTeX 模版](https://github.com/shaform/ntu-thesis/wiki)
-[配置VSCode为LaTeX集成开发环境(IDE) - 初级版](https://zhuanlan.zhihu.com/p/31883018)
+[臺灣大學碩博士論文 XeLaTeX 模版](https://github.com/shaform/ntu-thesis/wiki)  
+[配置VSCode为LaTeX集成开发环境(IDE) - 初级版](https://zhuanlan.zhihu.com/p/31883018)  
 [LaTeX技巧932：如何配置Visual Studio Code作为LaTeX编辑器[新版更新]](http://www.latexstudio.net/archives/12260)
 
 ## 環境
