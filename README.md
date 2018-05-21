@@ -100,6 +100,7 @@ sudo apt-get install fonts-lmodern
 
 這樣裝完之後  
 每次修改tex檔並儲存時，就會自動編譯並刷新已開啟的pdf檔  
+點右上角 View LaTeX PDF file (Ctrl+Alt+V)
 
 ## 其他
 如果想進行pdf文件處理  
