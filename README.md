@@ -1,4 +1,3 @@
-# latex-for-vscode
 # Writing LaTeX in VSCode
 在VSCode上寫LaTeX的安裝記錄，OS以Linux為主
 注意VSCode與LaTeX Workshop版本
