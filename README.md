@@ -1,14 +1,18 @@
 # Writing LaTeX in VSCode
-在VSCode上寫LaTeX的安裝記錄，OS以Linux為主  
+在VSCode上寫LaTeX的安裝記錄，OS以Linux為主、Windows也有裝成功  
 注意VSCode與LaTeX Workshop版本
 
 ## 參考
 [臺灣大學碩博士論文 XeLaTeX 模版](https://github.com/shaform/ntu-thesis/wiki)  
 [配置VSCode为LaTeX集成开发环境(IDE) - 初级版](https://zhuanlan.zhihu.com/p/31883018)  
-[LaTeX技巧932：如何配置Visual Studio Code作为LaTeX编辑器[新版更新]](http://www.latexstudio.net/archives/12260)
+[LaTeX技巧932：如何配置Visual Studio Code作为LaTeX编辑器[新版更新]](http://www.latexstudio.net/archives/12260)  
+[Windows 平台下在 Visual Studio Code 上使用 LaTeX](https://eggycat.github.io/2018/02/13/LaTeX-on-vscode/)
 
 ## 環境
 Linux Mint 18.1 Serena (Ubuntu 16.04)  
+Visual Studio Code 1.23.1  
+  
+Windows 10  
 Visual Studio Code 1.23.1  
 
 ## TeX Live
@@ -18,10 +22,11 @@ Visual Studio Code 1.23.1
 sudo apt-get install texlive texlive-xetex texlive-latex-recommended texlive-latex-extra texlive-bibtex-extra texlive-science texlive-humanities
 ```
 * ### Windows
-下載[TeX Live](https://www.tug.org/texlive/acquire-netinstall.html)並安裝  
-把bin目錄加到PATH中，例如：\Program Files\texlive\2017\bin\win32
-
-*不過我沒實際在Windows上裝過，僅供參考*
+從[元智的鏡像站](http://ftp.yzu.edu.tw/CTAN/systems/texlive/Images/)下載 **TeX Live 2018** (```texlive2018.iso``` 約3.2GB)  
+之後掛載或解壓縮，執行```install-tl-windows.bat```  
+安裝過程會問你要裝哪些，可以把前端工具取消不選  
+  
+裝完後可以跳去 **LaTeX Workshop** 步驟  
 
 ## 安裝字型
 取自[臺灣大學碩博士論文 XeLaTeX 模版](https://github.com/shaform/ntu-thesis/wiki)  
@@ -59,7 +64,7 @@ sudo apt-get install fonts-lmodern
 ## LaTeX Workshop
 直接在VSCode擴充功能上安裝 **LaTeX Workshop** 插件  
 我安裝的時候版本是5.4.0  
-接著 **開啟工作區->(選擇論文資料夾)**  
+接著 **開啟資料夾->(選擇論文資料夾)**  
 再從 **設定->工作區設定**  
 加入
 ```json=
@@ -100,7 +105,18 @@ sudo apt-get install fonts-lmodern
 
 這樣裝完之後  
 每次修改tex檔並儲存時，就會自動編譯並刷新已開啟的pdf檔  
-點右上角 View LaTeX PDF file (Ctrl+Alt+V)
+點右上角 ```View LaTeX PDF file (Ctrl+Alt+V)```
+
+* ### Windows
+一些注意事項  
+1. 論文資料夾路徑不得為中文  
+2. 如果有碰到類似```Error: Command \counterwithout already defined```  
+參考[StackExchange](https://tex.stackexchange.com/questions/425600/latex-error-command-counterwithout-already-defined)  
+需在```thesis.tex```最前面加上這兩行
+   ```=
+   \let\counterwithout\relax
+   \let\counterwithin\relax
+   ```
 
 ## 其他
 如果想進行pdf文件處理  
