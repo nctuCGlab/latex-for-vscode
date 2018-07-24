@@ -52,6 +52,7 @@ fc-cache
 # 4.4. 檢查是否成功，應該要看到標楷體和 Times New Roman
 fc-list | grep "times\|kaiu"
 ```
+或是直接放到 `~/.fonts` 資料夾下即可
 
 ## fonts-lmodern
 理論上按照[臺灣大學碩博士論文 XeLaTeX 模版](https://github.com/shaform/ntu-thesis/wiki)所說  
